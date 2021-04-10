@@ -1,0 +1,254 @@
+.bootgrid-footer .infoBar .btn-group>.btn-group .dropdown-menu, .bootgrid-header .actionBar .btn-group>.btn-group .dropdown-menu {
+    width: 228px;
+}
+
+#myBtnGoup {
+  display: none;
+  position: fixed;
+  bottom: 8px;
+  right: 44px;
+  z-index: 99;
+  padding: 3px 14px 3px 14px;
+}
+
+.image_missing{
+	border: 2px solid #cab3b3;
+  text-align:center;
+  border-radius:50%;
+  width:80px;
+  height:80px;
+  background: #e04545;
+  color:#fff;
+  font-size:30px;
+  padding-top:15px;
+}
+
+#header {
+  padding: 40px 45px 0 17px !important;
+}
+
+.media > .pull-left {
+  text-align: center;
+}
+
+.h-search {
+    padding: 2px 30px 2px 28px !important;
+}
+
+.associate-profile-table > img{
+  border: 2px solid #cab3b3;
+  text-align:center;
+  border-radius:50%;
+  width:80px;
+  height:80px;
+}
+
+
+.missing-company-logo{
+  text-align:center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #607d8b;
+  color:#fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size:18px;
+  padding-top:8px;
+}
+
+.missing-company-logo2{
+  text-align:center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #607d8b;
+  color:#fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  padding-top: 9px;
+}
+
+.company-add-associate-radio{
+  margin-bottom: 12px;
+}
+
+.fileinput .fileinput-preview {
+    background: #878888;
+}
+
+.company-associate-view-profile-pic{
+  text-align: center;
+  width: 172px;
+  height: 172px;
+  border-radius: 4%;
+  background: #12597b;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 85px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_profile_image{
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+  background: #c12929;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 62px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts > [class*="col-"] {
+    padding: 8px 19px;
+}
+
+.associate-project-list-no-img {
+  text-align: center;
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  background: #3d1488;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#proEdit .promgr_select .chosen-container-single .chosen-single, #add-project-frm .promgr_select .chosen-container-single .chosen-single{
+  padding: 6px 0 62px;
+}
+
+#proEdit .promgr_select img.chose-image-small, #add-project-frm .promgr_select img.chose-image-small {
+    width: 55px;
+    max-height: 55px;
+}
+
+#task_assignee > span, #task_creator > span, #TAGroupMem span {
+  /* background: #eaeaea;
+  border: 1px solid #d8d3d3;
+  padding: 17px 4px 20px 4px; */
+}
+
+.visact_del_component{
+  bottom: 100px;
+  right: 20px;
+}
+
+.visact_edit_component{
+  bottom: 100px;
+  right: 15px;
+}
+
+/* Task Screen */
+.card1{
+  background-color: aliceblue;
+  }
+.card2{
+  padding-left: 30px;
+  }
+
+  .adjust{
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: aliceblue;
+  }
+  .tab-color{
+    background-color: #e5f1fb;
+  }
+  .task-title{
+    text-transform: capitalize;
+    /* color: #009688; */
+    font-weight: 600;
+    /* box-shadow: 2px 2px; */
+    color: white;
+    background-color: #009688;
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+.refresh-position{
+   position: relative;
+  bottom: 6px;
+  left: 5px;
+}
+
+.task-details-btn{
+  position: relative;
+  background-color: #f0f8fe;
+  color: black;
+  box-shadow: none !important;
+  padding: 6px;
+}
+
+strong#task_assignee span {
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .card2{
+      padding-left: 15px;
+    padding-top: 15px;
+    }
+}
+
+.cal-col-red{
+  background-color:#E57373 !important;
+}
+
+.cal-col-yellow{
+  background-color: #FFF176 !important;
+}
+
+.cal-col-green{
+  background-color: #4CAF507D !important;
+}
+
+.fc-day-grid-event .fc-content {
+    font-size: 15px;
+}
+
+.fc-event .fc-title {
+    color: #100e0e;
+}
+
+#fc-actions {
+    position: relative !important;
+    right: 10px !important;
+    top: -34px !important;
+    bottom: 0 !important;
+}
+
+.no-img-associate-list{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-size: 38px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #08ab9c;
+}
+
+/* Task Screen */
+
+
