@@ -731,6 +731,9 @@ body:before {
     color:#DD6D4B !important;
     font-weight: 600 !important;
 }
+.border-green{
+    border-color: #00C48E !important;
+}
 
 /* Project screen */
 
@@ -968,6 +971,9 @@ body:before {
 .br-10{
     border-radius:10px;
 }
+.br-15{
+    border-radius:15px;
+}
 .br-5{
     border-radius:5px;
 }
@@ -1010,6 +1016,9 @@ body:before {
 .bg-light-green{
     background: rgba(87, 201, 170,0.6);
 }
+.bg-gray{
+    background-color: #E6E6E6;
+}
 .fs-25{
     font-size:25px;
 }
@@ -1028,6 +1037,12 @@ body:before {
 .create-task-container{
     width:500px;
     margin:0 auto;
+}
+.d-none{
+    display:none
+}
+.br-20{
+    border-radius:20px;
 }
 
 

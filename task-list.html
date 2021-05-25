@@ -483,25 +483,158 @@
     </button>
 
      <!-- modal sorting -->
-    <div class="modal fade sort-modal in" id="task-sort-modal" tabindex="-1" role="dialog" aria-hidden="true" style="padding-right: 17px;">
-        <div class="modal-dialog bgm-white br-5 cust-modal-width">
+    <div class="modal modal-md fade sort-modal in p-0" id="task-sort-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog bgm-white br-5 p-r-30 p-l-30 p-t-10 p-b-10 m-0">
+            <button type="button" class="close" data-dismiss="modal" style="color:#009688; font-size:30px">&times;</button>
             <div class="row">
-                <div class="col-xs-3">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs cust-nav-tabs tabs-left sideways">
-                    <li class="active"><a href="#home-v" data-toggle="tab">Staus</a></li>
-                    <li class="m-l-10"><a href="#profile-v" data-toggle="tab">Types</a></li>
-                    <li class="m-l-10"><a href="#messages-v" data-toggle="tab">Priority</a></li>
-                    <li class="m-l-10 p-b-20"><a href="#settings-v" data-toggle="tab">Project</a></li>
-                    </ul>
+                <div class="col-md-12 m-b-10 p-0 m-t-15">
+                    <div class="date-container">
+                        <div class="section-date mr10">
+                            <div class="input-group form-group">
+                                <div class="dtp-container fg-line">
+                                    <input type='text' class="form-control date-time-picker" placeholder="Start Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-date">
+                            <div class="input-group form-group">
+                                <div class="dtp-container fg-line">
+                                    <input type='text' class="form-control date-time-picker" placeholder="Due date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-9 p-l-0">
-                    <!-- Tab panes -->
-                    <div class="tab-content cust-tab-content p-0">
-                    <div class="tab-pane cust-tab-pane tab-pane-height active" id="home-v"><span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span></div>
-                    <div class="tab-pane cust-tab-pane tab-pane-height" id="profile-v"><span class="badge badge-white badge-pad m-r-5">Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span></div>
-                    <div class="tab-pane cust-tab-pane tab-pane-height" id="messages-v"><span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span></div>
-                    <div class="tab-pane cust-tab-pane tab-pane-height" id="settings-v"><span class="badge badge-white badge-pad m-r-5">Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span> <span class="badge badge-white badge-pad m-r-5">Not Attended</span></div>
+                <div class="m-b-10">
+                    <span class="badge m-r-10 br-15 p-10 bg-color-green m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="0">
+                        <span class="text-light-black p-r-5 p-l-5">NOT ATTENDED</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="1">
+                        <span class="text-light-black p-r-5 p-l-5">IN PROGRESS</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="2">
+                        <span class="text-light-black p-r-5 p-l-5">COMPLETED</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="3">
+                        <span class="text-light-black p-r-5 p-l-5">OVERDUE</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-color-green m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="4">   
+                        <span class="text-light-black p-r-5 p-l-5">MY TASKS</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-color-green m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="5">   
+                        <span class="text-light-black p-r-5 p-l-5">SELF ASSIGNED</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="6">   
+                        <span class="text-light-black p-r-5 p-l-5">ASSIGNED TASK</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="7">   
+                        <span class="text-light-black p-r-5 p-l-5">ALL</span>
+                    </span>
+                </div>
+                <div class="m-b-10">
+                    <h5>Flags</h5>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="8">   
+                        <span class="text-light-black p-r-5 p-l-5">CRITICAL</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="9">   
+                        <span class="text-light-black p-r-5 p-l-5">EXCEPTION</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="10">   
+                        <span class="text-light-black p-r-5 p-l-5">COLLABRATIVE</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="11">   
+                        <span class="text-light-black p-r-5 p-l-5">RECURSIVE</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-color-green m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="12">   
+                        <span class="text-light-black p-r-5 p-l-5">REDO</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="13">   
+                        <span class="text-light-black p-r-5 p-l-5">REDO</span>
+                    </span>
+                    <span class="border p-10 br-20 m-r-10 border-green">
+                        <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                            <input class="d-none" type="radio" name="task-satus" value="0">
+                            <span class="text-light-black p-r-5 p-l-5">SELF ASSIGNED</span>
+                        </span>
+                        <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                            <input class="d-none" type="radio" name="task-satus" value="1">
+                            <span class="text-light-black p-r-5 p-l-5">ASSIGNED TASK</span>
+                        </span>
+                        <span class="badge m-r-10 br-15 p-10 bg-color-green m-b-5">
+                            <input class="d-none" type="radio" name="task-satus" value="2">
+                            <span class="text-light-black p-r-5 p-l-5">ALL</span>
+                        </span>
+                    </span> 
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-10">
+                        <input class="d-none" type="checkbox" name="task-satus" value="">
+                        <span class="text-light-black p-r-5 p-l-5">PARENT TASK</span>
+                    </span>
+                </div>
+                <div class="m-b-10">
+                    <h5>Priority</h5>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="14">
+                        <span class="text-light-black p-r-5 p-l-5">HIGH</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="15">
+                        <span class="text-light-black p-r-5 p-l-5">MEDIUM</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="16">
+                        <span class="text-light-black p-r-5 p-l-5">LOW</span>
+                    </span>
+                </div>
+                <div class="m-b-10">
+                    <h5>Type of task</h5>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="17">
+                        <span class="text-light-black p-r-5 p-l-5">HIGH</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="">
+                        <span class="text-light-black p-r-5 p-l-5">MEDIUM</span>
+                    </span>
+                    <span class="badge m-r-10 br-15 p-10 bg-gray m-b-5">
+                        <input class="d-none" type="checkbox" name="task-satus" value="">
+                        <span class="text-light-black p-r-5 p-l-5">LOW</span>
+                    </span>
+                </div>
+                <div>
+                    <h5>By project</h5>
+                    <div class="task-select-project-container m-b-15">
+                        <select class="selectpicker" placeholder="Select project">
+                            <option>Select project</option>
+                            <option>Project2</option>
+                            <option>Project3</option>
+                            <option>Project4</option>
+                            <option>Project5</option>
+                            <option>Project</option>
+                        </select>
+                    </div>
+                    <div class="task-select-project-container m-b-15">
+                        <select class="selectpicker" placeholder="Select project">
+                            <option>Select project</option>
+                            <option>Project2</option>
+                            <option>Project3</option>
+                            <option>Project4</option>
+                            <option>Project5</option>
+                            <option>Project</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -513,7 +646,7 @@
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" style="color:#009688; font-size:30px" onclick="closeModelAndRest('#ed-task-postchecklist-frm'); return false;" >&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" style="color:#009688; font-size:30px" onclick="closeModelAndRest('#ed-task-postchecklist-frm'); return false;" >&times;</button>
                     <h4 class="modal-title f-700">CREATE TASK</h4>
                 </div>
                 <div class="modal-body task-card">
